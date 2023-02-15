@@ -1,0 +1,24 @@
+.first {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: #B9F3E4;
+}
+
+.first__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 450px;
+    height: 200px;
+    background-color: #F6E6C2;
+    border-radius: 20px;
+}
+
+.first__wrapper button {
+    width: 50%;
+}
