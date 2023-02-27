@@ -1,0 +1,19 @@
+.seventh {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #4bf94e;
+}
+
+.seventh__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    min-height: 300px;
+    border-radius: 20px;
+}
