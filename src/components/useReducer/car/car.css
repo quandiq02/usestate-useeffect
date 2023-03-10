@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.car {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1f2a1;
+}
+
+.car__wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    min-height: 400px;
+    background: #602caa;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.car__img {
+    height: 150px;
+    width: 200px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.car__block-1,
+.car__block-2 {
+    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.car__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.car__btn-remove,
+.car__btn-add {
+    padding: 8px;
+    margin-right: 5px;
+    background-color: #e6de13;
+    border: none;
+}
+.car__title-1,.car__title-2{
+    font-weight: 500;
+    font-size: 20px;
+}
+.car__amount{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
