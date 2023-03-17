@@ -17,12 +17,114 @@
 .card__wrapper {
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    min-height: 400px;
     gap: 10px;
     width: 600px;
-    min-height: 400px;
     background: #46b42a;
     border-radius: 20px;
     color: #fff;
+}
+
+.card__main {
+    height: 400px;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card__elem-img,
+.modal__elem-img {
+    width: 300px;
+    height: 200px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.modal__content {
+    transform: scale(0);
+    display: none;
+}
+
+.modal__content-active {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+}
+
+.card-modal__block {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    width:60vw;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 30px;
+}
+.card-modal__title{
+    flex-basis: 100%;
+}
+.card-modal__title,.card__header-title{
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+}
+.card__header-title{
+    color: #fff ;
+}
+.modal__elem-img{
+    width: 250px;
+    height: 180px;
+}
+.modal__elem-img img{
+    height: 100%;
+}
+
+.card-modal__btn-exit {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    align-self: flex-end;
+    justify-self: end;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.header-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header-btn__submit,.header-btn__submit-all{
+    padding: 5px;
+    background-color: rgb(204, 75, 204);
+    color: #fff;
+    border: none;
+    font-weight: 700;
 }

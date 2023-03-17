@@ -1,0 +1,69 @@
+.simpsonMain, .character {
+    height: 100vh;
+    width: 100%;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simpsonMain__wrapper, .character__wrapper {
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.simpsonMain__title,.character__title {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.simpsonMain__list, .character__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    border: 1px solid #afafaf;
+}
+
+.simpsonMain__list li, .character__list li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 200ms linear;
+
+}
+
+.simpsonMain__list li:hover {
+    background-color: #d8d8d8;
+}
+
+.simpsonMain__list li span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.simpsonMain__link,.character__list li {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+.character__list li{
+    cursor: default;
+    margin-left: 0;
+}
+.character__name{
+    font-size: 23px;
+}
+
+.simpsonChar__link {
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+}
